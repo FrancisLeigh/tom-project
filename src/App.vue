@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>App View</h1>
+    <basket title="Toms Basket Component"></basket>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Basket from './components/Basket'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Basket
+  },
+  mounted () {
+    console.log('YO, App has loaded')
   }
 }
 </script>
